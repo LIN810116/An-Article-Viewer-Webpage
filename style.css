@@ -1,18 +1,18 @@
-div { /* for testing purpose*/
-    border: 1px solid black;
-}
+/*div { !* for testing purpose*!*/
+    /*border: 1px solid black;*/
+/*}*/
 
 .titleBar {
-    grid-area: titleBar;
+    /*grid-area: titleBar;*/
     text-align: center;
 }
 
 .sidebar {
-    grid-area: sidebar;
+    /*grid-area: sidebar;*/
 }
 
 .articles {
-    grid-area: articles;
+    /*grid-area: articles;*/
 }
 
 /*.container {*/
@@ -51,4 +51,8 @@ div { /* for testing purpose*/
     margin: 5px 5px 5px 5px;
     width: 320px;
     height: 240px;
+}
+
+#container, #article1, #article2, #article3, #article4, #article5{
+    padding-top:60px;
 }
