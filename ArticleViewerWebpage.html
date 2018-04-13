@@ -24,9 +24,9 @@
     <!--End of Bootstrap-->
 </head>
 
-<body data-target="#navbar" data-spy="scroll">
+<body data-target="#navbar" data-spy="scroll"> <!--Scrollspy-->
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="navbar">
     <!--<a class="navbar-brand" href="#">Navbar</a>-->
     <span class="navbar-brand mb-0 h1">Article Viewer Webpage</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -282,5 +282,22 @@
         </div>
     </div> <!--end of row-->
 </div>
+
+<nav aria-label="pagination"> <!--Pagination-->
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active">
+            <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+        </li>
+        <!--<li class="page-item"><a class="page-link" href="#">2</a></li>-->
+        <!--<li class="page-item"><a class="page-link" href="#">3</a></li>-->
+        <li class="page-item disabled">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+
 </body>
 </html>
