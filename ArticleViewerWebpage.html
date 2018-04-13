@@ -3,160 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <title>An Article Viewer Webpage</title>
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <!--End of Bootstrap-->
+    <!--my CSS-->
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="container">
-    <div class="titleBar"><h1>An Article Viewer Webpage</h1></div>
-    <div class="sidebar">
-        <div class="links">
-        <ul>
-            <h2>Quick Links</h2>
-            <li><h3><a href="#article1">Article One</a></h3></li>
-            <li><h3><a href="#article2">Article Two</a></h3></li>
-            <li><h3><a href="#article3">Article Three</a></h3></li>
-            <li><h3><a href="#article4">Article Four</a></h3></li>
-            <li><h3><a href="#article5">Article Five</a></h3></li>
-        </ul>
+    <div class="row header">
+        <div class="titleBar col">
+            <h1>An Article Viewer Webpage</h1>
         </div>
-        <!-- TaskThree -->
-        <div class="form">
-        <form action="https://sporadic.nz/2018a_web_assignment_service/Subscribe" method="post">
-            <fieldset>
-                <legend>Sign Up</legend>
-                Join our newsletter!
-                <input type="email" name="email" placeholder = "Email address" required>
-                <br>
-                <input type = "submit" value="Subscribe">
-            </fieldset>
-        </form>
-        </div>
-        <!-- end of TaskThree -->
-    </div>
-    <div class="articles">
-        <div id="article1">
-            <h2>Article One</h2>
-            <img class="thumbnail" src="materials/image1.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim pellentesque risus, viverra
-                mollis
-                erat dignissim sit amet. Praesent id ligula quam. Donec congue eu diam non interdum. Nunc viverra diam
-                id
-                quam dapibus, non lacinia arcu ultrices. Quisque vel dignissim lectus. Nam eu varius arcu, non
-                scelerisque
-                diam. Nulla facilisi. Fusce tincidunt neque eu enim consequat efficitur. In hac habitasse platea
-                dictumst.
-                Mauris quis rutrum lectus, et pharetra enim.
-            </p>
-            <p>
-                Curabitur maximus erat quis elementum rhoncus. Duis ultricies semper aliquam. Vivamus fringilla, arcu
-                sed
-                lacinia euismod, velit dolor congue nulla, eget elementum risus lacus et nulla. Nulla rhoncus blandit
-                tristique. Etiam vel accumsan arcu, id bibendum dui. Etiam sollicitudin neque vitae accumsan rutrum.
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut
-                dignissim metus, rhoncus consectetur nisi. Pellentesque fermentum eros eu nibh gravida, ut dignissim
-                lacus
-                vestibulum.
-            </p>
-        </div>
-        <div id="article2">
-            <h2>Article Two</h2>
-            <img class="thumbnail" src="materials/image2.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper faucibus lectus a egestas.
-                Aliquam
-                enim sem, rutrum in ante vitae, sagittis dignissim sapien. Suspendisse potenti. In pretium sagittis
-                enim, sit amet iaculis justo. Duis dolor lorem, aliquam eu massa ultrices, suscipit posuere enim. Cras
-                mattis tincidunt varius. Nam id pulvinar elit.
-            </p>
-            <p>
-                Nullam finibus dolor urna, eget sollicitudin sapien auctor eu. Nulla facilisi. Suspendisse dignissim
-                arcu nec sem suscipit accumsan. Fusce pharetra neque orci. Sed massa magna, blandit non nibh suscipit,
-                lobortis tempor massa. Sed eu purus tincidunt, convallis nibh bibendum, malesuada purus. Fusce et
-                sodales elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos. Donec fringilla dictum ullamcorper. Pellentesque et nulla in magna egestas pharetra. Donec
-                auctor est eget diam vestibulum, ac vestibulum ligula porttitor. Etiam cursus sapien id dolor varius
-                euismod. Praesent lacinia, nisi eu mattis auctor, ex mauris vehicula mi, et molestie dui turpis sed
-                neque. Cras sit amet porta odio.
-            </p>
+    </div>  <!--end of row header-->
 
+    <div class="row">
+        <div class="sidebar col-lg-3 col-12">
+            <div class="row">
+                <div class="links col-lg-12 col-6">
+                    <ul>
+                        <h2>Quick Links</h2>
+                        <li><h3><a href="#article1">Article One</a></h3></li>
+                        <li><h3><a href="#article2">Article Two</a></h3></li>
+                        <li><h3><a href="#article3">Article Three</a></h3></li>
+                        <li><h3><a href="#article4">Article Four</a></h3></li>
+                        <li><h3><a href="#article5">Article Five</a></h3></li>
+                    </ul>
+                </div>
+                <!-- TaskThree -->
+                <div class="form col-lg-12 col-6">
+                    <form action="https://sporadic.nz/2018a_web_assignment_service/Subscribe" method="post">
+                        <fieldset>
+                            <legend>Sign Up</legend>
+                            Join our newsletter!
+                            <input type="email" name="email" placeholder="Email address" required>
+                            <br>
+                            <input type="submit" value="Subscribe">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- end of TaskThree -->
+        </div> <!-- end of sidebar -->
+        <div class="articles col-lg-9 col-12">
+            <div id="article1">
+                <h2>Article One</h2>
+                <img class="thumbnail" src="materials/image1.jpg">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim pellentesque risus,
+                    viverra
+                    mollis
+                    erat dignissim sit amet. Praesent id ligula quam. Donec congue eu diam non interdum. Nunc
+                    viverra diam
+                    id
+                    quam dapibus, non lacinia arcu ultrices. Quisque vel dignissim lectus. Nam eu varius arcu, non
+                    scelerisque
+                    diam. Nulla facilisi. Fusce tincidunt neque eu enim consequat efficitur. In hac habitasse platea
+                    dictumst.
+                    Mauris quis rutrum lectus, et pharetra enim.
+                </p>
+                <p>
+                    Curabitur maximus erat quis elementum rhoncus. Duis ultricies semper aliquam. Vivamus fringilla,
+                    arcu
+                    sed
+                    lacinia euismod, velit dolor congue nulla, eget elementum risus lacus et nulla. Nulla rhoncus
+                    blandit
+                    tristique. Etiam vel accumsan arcu, id bibendum dui. Etiam sollicitudin neque vitae accumsan
+                    rutrum.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut
+                    ut
+                    dignissim metus, rhoncus consectetur nisi. Pellentesque fermentum eros eu nibh gravida, ut
+                    dignissim
+                    lacus
+                    vestibulum.
+                </p>
+            </div>
+            <div id="article2">
+                <h2>Article Two</h2>
+                <img class="thumbnail" src="materials/image2.jpg">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper faucibus lectus a
+                    egestas.
+                    Aliquam
+                    enim sem, rutrum in ante vitae, sagittis dignissim sapien. Suspendisse potenti. In pretium
+                    sagittis
+                    enim, sit amet iaculis justo. Duis dolor lorem, aliquam eu massa ultrices, suscipit posuere
+                    enim. Cras
+                    mattis tincidunt varius. Nam id pulvinar elit.
+                </p>
+                <p>
+                    Nullam finibus dolor urna, eget sollicitudin sapien auctor eu. Nulla facilisi. Suspendisse
+                    dignissim
+                    arcu nec sem suscipit accumsan. Fusce pharetra neque orci. Sed massa magna, blandit non nibh
+                    suscipit,
+                    lobortis tempor massa. Sed eu purus tincidunt, convallis nibh bibendum, malesuada purus. Fusce
+                    et
+                    sodales elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos. Donec fringilla dictum ullamcorper. Pellentesque et nulla in magna egestas pharetra.
+                    Donec
+                    auctor est eget diam vestibulum, ac vestibulum ligula porttitor. Etiam cursus sapien id dolor
+                    varius
+                    euismod. Praesent lacinia, nisi eu mattis auctor, ex mauris vehicula mi, et molestie dui turpis
+                    sed
+                    neque. Cras sit amet porta odio.
+                </p>
+
+            </div>
+            <div id="article3">
+                <h2>Article Three</h2>
+                <img class="thumbnail" src="materials/image3.jpg">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non massa porta, sodales urna
+                    eu,
+                    tempor urna. Phasellus consequat mollis blandit. Integer sagittis est porttitor ligula cursus,
+                    quis
+                    pretium mauris elementum. Orci varius natoque penatibus et magnis dis parturient montes,
+                    nascetur
+                    ridiculus mus. Donec mattis vulputate pharetra. Nulla aliquam quam tellus, ut convallis metus
+                    varius
+                    quis. Nam enim dui, eleifend id blandit ac, hendrerit id ex. Nam eu ante congue, tempor ex non,
+                    euismod
+                    purus. Etiam sodales ipsum et dolor porttitor, eu posuere lacus bibendum. Integer at ex non
+                    sapien
+                    malesuada mollis at ut est. Morbi auctor massa sed risus molestie tempus. Phasellus convallis
+                    sapien et
+                    leo auctor, eget malesuada lectus convallis. Aliquam risus nibh, malesuada et rhoncus eget,
+                    maximus a
+                    enim. Suspendisse potenti.
+                </p>
+                <p>
+                    Morbi cursus molestie gravida. Sed eget justo interdum, cursus nunc at, pellentesque ante. Proin
+                    sed
+                    condimentum massa, at ornare mauris. Aenean lectus diam, blandit et egestas ac, vulputate at
+                    enim.
+                    Curabitur cursus luctus velit. Vestibulum in venenatis augue. Nam luctus vehicula nisi eu
+                    tempus.
+                    Phasellus ut euismod magna. Proin vitae neque ut dui consectetur ultricies eget eu lorem. Nam
+                    bibendum
+                    tempus libero, in porttitor nunc varius eget. Vestibulum mattis, odio feugiat sollicitudin
+                    suscipit, leo
+                    tortor aliquam magna, eget condimentum leo justo id metus. Donec eget ultrices ex. Maecenas
+                    sodales
+                    malesuada mollis. Suspendisse potenti. Suspendisse auctor pellentesque egestas.
+                </p>
+            </div>
+            <div id="article4">
+                <h2>Article Four</h2>
+                <img class="thumbnail" src="materials/image4.jpg">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, blandit suscipit ex
+                    id,
+                    mattis aliquam mi. Ut laoreet ligula at justo eleifend, eget dignissim turpis pellentesque. Duis
+                    vitae
+                    nulla eget dolor consectetur tincidunt. Duis tincidunt, lectus id scelerisque interdum, lacus
+                    metus
+                    viverra est, eu volutpat est arcu sit amet turpis. Donec ultrices eget diam at dictum. Integer
+                    eleifend
+                    eget ex vel porta. Nunc nisi nulla, tincidunt ut maximus nec, fringilla vel turpis. Cras semper
+                    augue
+                    est, id porta nisi euismod at. Maecenas tellus erat, hendrerit ut ipsum vel, condimentum iaculis
+                    augue.
+                    Aenean eleifend nisl sit amet eros condimentum, nec eleifend ligula porta. Donec vestibulum
+                    neque
+                    iaculis, consequat arcu vitae, facilisis magna. Vestibulum porta odio diam, eget lacinia quam
+                    rutrum
+                    non. Morbi non ultricies odio. Mauris cursus quam vel ante molestie, ac cursus lorem pretium.
+                </p>
+                <p>
+                    In at aliquam ex, at euismod mauris. Integer scelerisque, magna eget dictum euismod, nisl dui
+                    ultrices
+                    massa, ac vestibulum libero lectus quis nibh. Mauris sit amet massa scelerisque, tincidunt
+                    ligula quis,
+                    aliquam tellus. Sed venenatis gravida mauris, sit amet efficitur orci mattis sed. Nunc eu
+                    accumsan arcu.
+                    Mauris sed arcu felis. Fusce augue libero, placerat in venenatis vel, mollis sit amet massa.
+                    Aenean
+                    condimentum eleifend libero, sit amet fringilla turpis tristique quis. Duis facilisis porta
+                    cursus.
+                    Quisque euismod est vel purus commodo, ac dignissim ligula laoreet. Sed justo ante, rhoncus non
+                    massa
+                    quis, varius pretium tellus. Donec lobortis ipsum ut lectus iaculis, et congue lorem tincidunt.
+                    Interdum
+                    et malesuada fames ac ante ipsum primis in faucibus. Suspendisse pulvinar viverra purus ac
+                    accumsan.
+                    Donec ullamcorper ipsum imperdiet est commodo, quis pretium leo accumsan. Cras egestas vulputate
+                    dolor
+                    nec sollicitudin.
+                </p>
+            </div>
+            <div id="article5">
+                <h2>Article Five</h2>
+                <img class="thumbnail" src="materials/image5.jpg">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum risus ac eros interdum
+                    porttitor. Aliquam purus urna, feugiat nec purus sed, ornare varius diam. Nunc nec nunc ipsum.
+                    Suspendisse in viverra enim. Suspendisse convallis vehicula lacus eget venenatis. Integer
+                    imperdiet eros
+                    et nibh venenatis, sed iaculis nisl finibus. Maecenas a consectetur diam. Donec fermentum massa
+                    nisl,
+                    nec posuere tortor aliquam vel. Pellentesque dapibus eros sem, quis elementum ligula pulvinar
+                    vitae.
+                    Aenean vel odio ac mauris dictum aliquam. Sed eu fermentum urna. Donec dictum, purus vitae
+                    lacinia
+                    ultrices, felis arcu pharetra lorem, id aliquet tellus nunc a sem. Fusce aliquam nisl sit amet
+                    ex
+                    iaculis imperdiet.
+                </p>
+                <p>
+                    Proin ut felis egestas, ornare nunc id, placerat ipsum. Integer condimentum orci in neque
+                    sodales, sed
+                    tempus orci congue. Integer a risus ligula. Morbi pretium tincidunt metus, ut elementum est
+                    tristique
+                    in. Integer vestibulum, arcu tempor varius laoreet, est lorem viverra est, sed malesuada felis
+                    velit in
+                    turpis. Quisque rutrum consectetur pharetra. Curabitur eu auctor ex. Aenean dignissim justo a ex
+                    vulputate, aliquet sollicitudin sem gravida. Aliquam est mi, blandit eget ex id, condimentum
+                    scelerisque
+                    nibh. Proin dictum mauris dolor, facilisis vestibulum justo congue imperdiet. Duis et tempus mi.
+                    Mauris
+                    arcu ante, viverra ac leo in, auctor dapibus nisi. Suspendisse eleifend arcu id turpis bibendum
+                    feugiat.
+                    Aenean vel dolor ligula.
+                </p>
+            </div>
         </div>
-        <div id="article3">
-            <h2>Article Three</h2>
-            <img class="thumbnail" src="materials/image3.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non massa porta, sodales urna eu,
-                tempor urna. Phasellus consequat mollis blandit. Integer sagittis est porttitor ligula cursus, quis
-                pretium mauris elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec mattis vulputate pharetra. Nulla aliquam quam tellus, ut convallis metus varius
-                quis. Nam enim dui, eleifend id blandit ac, hendrerit id ex. Nam eu ante congue, tempor ex non, euismod
-                purus. Etiam sodales ipsum et dolor porttitor, eu posuere lacus bibendum. Integer at ex non sapien
-                malesuada mollis at ut est. Morbi auctor massa sed risus molestie tempus. Phasellus convallis sapien et
-                leo auctor, eget malesuada lectus convallis. Aliquam risus nibh, malesuada et rhoncus eget, maximus a
-                enim. Suspendisse potenti.
-            </p>
-            <p>
-                Morbi cursus molestie gravida. Sed eget justo interdum, cursus nunc at, pellentesque ante. Proin sed
-                condimentum massa, at ornare mauris. Aenean lectus diam, blandit et egestas ac, vulputate at enim.
-                Curabitur cursus luctus velit. Vestibulum in venenatis augue. Nam luctus vehicula nisi eu tempus.
-                Phasellus ut euismod magna. Proin vitae neque ut dui consectetur ultricies eget eu lorem. Nam bibendum
-                tempus libero, in porttitor nunc varius eget. Vestibulum mattis, odio feugiat sollicitudin suscipit, leo
-                tortor aliquam magna, eget condimentum leo justo id metus. Donec eget ultrices ex. Maecenas sodales
-                malesuada mollis. Suspendisse potenti. Suspendisse auctor pellentesque egestas.
-            </p>
-        </div>
-        <div id="article4">
-            <h2>Article Four</h2>
-            <img class="thumbnail" src="materials/image4.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, blandit suscipit ex id,
-                mattis aliquam mi. Ut laoreet ligula at justo eleifend, eget dignissim turpis pellentesque. Duis vitae
-                nulla eget dolor consectetur tincidunt. Duis tincidunt, lectus id scelerisque interdum, lacus metus
-                viverra est, eu volutpat est arcu sit amet turpis. Donec ultrices eget diam at dictum. Integer eleifend
-                eget ex vel porta. Nunc nisi nulla, tincidunt ut maximus nec, fringilla vel turpis. Cras semper augue
-                est, id porta nisi euismod at. Maecenas tellus erat, hendrerit ut ipsum vel, condimentum iaculis augue.
-                Aenean eleifend nisl sit amet eros condimentum, nec eleifend ligula porta. Donec vestibulum neque
-                iaculis, consequat arcu vitae, facilisis magna. Vestibulum porta odio diam, eget lacinia quam rutrum
-                non. Morbi non ultricies odio. Mauris cursus quam vel ante molestie, ac cursus lorem pretium.
-            </p>
-            <p>
-                In at aliquam ex, at euismod mauris. Integer scelerisque, magna eget dictum euismod, nisl dui ultrices
-                massa, ac vestibulum libero lectus quis nibh. Mauris sit amet massa scelerisque, tincidunt ligula quis,
-                aliquam tellus. Sed venenatis gravida mauris, sit amet efficitur orci mattis sed. Nunc eu accumsan arcu.
-                Mauris sed arcu felis. Fusce augue libero, placerat in venenatis vel, mollis sit amet massa. Aenean
-                condimentum eleifend libero, sit amet fringilla turpis tristique quis. Duis facilisis porta cursus.
-                Quisque euismod est vel purus commodo, ac dignissim ligula laoreet. Sed justo ante, rhoncus non massa
-                quis, varius pretium tellus. Donec lobortis ipsum ut lectus iaculis, et congue lorem tincidunt. Interdum
-                et malesuada fames ac ante ipsum primis in faucibus. Suspendisse pulvinar viverra purus ac accumsan.
-                Donec ullamcorper ipsum imperdiet est commodo, quis pretium leo accumsan. Cras egestas vulputate dolor
-                nec sollicitudin.
-            </p>
-        </div>
-        <div id="article5">
-            <h2>Article Five</h2>
-            <img class="thumbnail" src="materials/image5.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum risus ac eros interdum
-                porttitor. Aliquam purus urna, feugiat nec purus sed, ornare varius diam. Nunc nec nunc ipsum.
-                Suspendisse in viverra enim. Suspendisse convallis vehicula lacus eget venenatis. Integer imperdiet eros
-                et nibh venenatis, sed iaculis nisl finibus. Maecenas a consectetur diam. Donec fermentum massa nisl,
-                nec posuere tortor aliquam vel. Pellentesque dapibus eros sem, quis elementum ligula pulvinar vitae.
-                Aenean vel odio ac mauris dictum aliquam. Sed eu fermentum urna. Donec dictum, purus vitae lacinia
-                ultrices, felis arcu pharetra lorem, id aliquet tellus nunc a sem. Fusce aliquam nisl sit amet ex
-                iaculis imperdiet.
-            </p>
-            <p>
-                Proin ut felis egestas, ornare nunc id, placerat ipsum. Integer condimentum orci in neque sodales, sed
-                tempus orci congue. Integer a risus ligula. Morbi pretium tincidunt metus, ut elementum est tristique
-                in. Integer vestibulum, arcu tempor varius laoreet, est lorem viverra est, sed malesuada felis velit in
-                turpis. Quisque rutrum consectetur pharetra. Curabitur eu auctor ex. Aenean dignissim justo a ex
-                vulputate, aliquet sollicitudin sem gravida. Aliquam est mi, blandit eget ex id, condimentum scelerisque
-                nibh. Proin dictum mauris dolor, facilisis vestibulum justo congue imperdiet. Duis et tempus mi. Mauris
-                arcu ante, viverra ac leo in, auctor dapibus nisi. Suspendisse eleifend arcu id turpis bibendum feugiat.
-                Aenean vel dolor ligula.
-            </p>
-        </div>
-    </div>
+    </div> <!--end of row-->
 </div>
 </body>
 </html>
