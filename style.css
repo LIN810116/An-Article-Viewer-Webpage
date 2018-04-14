@@ -11,6 +11,10 @@
     /*grid-area: sidebar;*/
 }
 
+.links > h2, .form > form{
+    padding-left: 10px;
+}
+
 .articles {
     /*grid-area: articles;*/
 }
